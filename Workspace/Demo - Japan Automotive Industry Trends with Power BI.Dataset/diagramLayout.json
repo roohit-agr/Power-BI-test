@@ -1,0 +1,118 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 731.45010134100039,
+            "y": 473.86861217300032
+          },
+          "nodeIndex": "2007",
+          "size": {
+            "height": 182.65331998300002,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 750.9,
+            "y": 231
+          },
+          "nodeIndex": "2008",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1343.67947691,
+            "y": 731.5845075550003
+          },
+          "nodeIndex": "2009",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1914.475252139,
+            "y": 537.88450755500025
+          },
+          "nodeIndex": "2010",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1555.7189137690002,
+            "y": 0
+          },
+          "nodeIndex": "2011",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1145.1635815280001,
+            "y": 0
+          },
+          "nodeIndex": "2012",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1098.8036240060012,
+            "y": 257.01629831900027
+          },
+          "nodeIndex": "Passenger cars",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1434.322535348,
+            "y": 291.51690151100007
+          },
+          "nodeIndex": "Dataset",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 5
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 25.348095444133143,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

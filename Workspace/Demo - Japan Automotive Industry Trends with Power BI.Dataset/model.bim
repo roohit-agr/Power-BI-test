@@ -1,0 +1,1160 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.126.1261.0 (24.02)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Passenger cars\",\"2007\",\"2008\",\"2009\",\"2010\",\"2011\",\"2012\",\"Dataset\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-IN",
+    "cultures": [
+      {
+        "name": "en-IN",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "f92c9020-bbc6-464b-b5d6-bbf05b628f49",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Manufacturer",
+        "fromTable": "2007",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "49710324-64ec-4dbb-ad5c-ae018ca36d93",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Manufacturer",
+        "fromTable": "2008",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "a46f142f-e51c-45cc-a8eb-b22818b82c06",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Manufacturer",
+        "fromTable": "2009",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "8870bf4c-631d-4dde-bfab-e2f29a3b952a",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Manufacturer",
+        "fromTable": "2010",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "6de08dbc-2c34-4324-bca2-b47bb7a08659",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Manufacturer",
+        "fromTable": "2011",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "5d80d872-2c07-44d5-aa6e-b366fef02974",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Manufacturer",
+        "fromTable": "2012",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "d3382dda-00a6-4832-aa4b-61b4c514b3cd",
+        "fromColumn": "Manufacturer",
+        "fromTable": "Dataset",
+        "toColumn": "Manufacturer",
+        "toTable": "Passenger cars"
+      },
+      {
+        "name": "f24e3ff7-349f-48d1-89ef-306a958eb928",
+        "fromColumn": "Sales",
+        "fromTable": "Dataset",
+        "isActive": false,
+        "toColumn": "Sales",
+        "toTable": "2009"
+      },
+      {
+        "name": "40974855-d6f7-41e1-b187-3c7c0809ef9f",
+        "fromColumn": "Sales",
+        "fromTable": "Dataset",
+        "isActive": false,
+        "toColumn": "Sales",
+        "toTable": "2010"
+      },
+      {
+        "name": "d68566ef-4867-4b14-b3f1-722c7a5b663e",
+        "fromColumn": "Sales",
+        "fromTable": "Dataset",
+        "isActive": false,
+        "toColumn": "Sales",
+        "toTable": "2011"
+      },
+      {
+        "name": "94302def-2856-42cc-80bc-652cf074792d",
+        "fromColumn": "Sales",
+        "fromTable": "Dataset",
+        "isActive": false,
+        "toColumn": "Sales",
+        "toTable": "2012"
+      }
+    ],
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "DateTableTemplate_4101504e-f84f-4e77-8d81-6152d5db5f1f",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "67971af4-6121-45be-9354-72ddc80f66bb",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "c9e1f9b4-bdb9-4d64-9312-320a41c9313f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "994c935f-1f83-4a31-98f4-c0d7ce870e7d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "457e3c65-2595-4bd3-8eee-88d9b587a500",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "d2dc3540-2b65-44eb-82bf-d61fa931f56b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "ff03009f-bf45-463b-a287-d2faaa271d87",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "703d227f-7345-4507-b0f2-712b0f8e782e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "70d64e74-ffc7-42ed-bd99-f753b4643007",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "0afe7299-cee7-4119-b438-b4dd1c8c9c70",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "1b0f52ea-751f-4c65-8b29-3d3e6a8b2d4a",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "6a1715d7-99d5-42f2-924d-243af33190b4",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "3dfbc0fc-eeb4-49f0-887c-d7005d3aaef1"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "cd41bba3-f511-4ba8-9fc2-bdd4bd391e60",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_4101504e-f84f-4e77-8d81-6152d5db5f1f-da496f72-8298-4a86-96ff-3f4327ba47f2",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Passenger cars",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dcb0b5ec-d695-4882-94a0-985d6ded9b64",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "891680ab-a0f3-4705-8170-8a4afbe9c641",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c6d91ea3-708a-43f5-b95c-28ded7561bdc",
+            "sourceColumn": "Sales",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4f7f2d34-ef35-4f7a-acc9-13e9087792a6",
+            "sourceColumn": "Year1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e3f1c45-f0f4-44b6-921c-5f28fb40587d",
+            "sourceColumn": "Sales1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Attribute.2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0a162342-9dde-467e-b149-5c3886b694b0",
+            "sourceColumn": "Attribute.2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value.2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8c27ca48-f8a8-44f0-8fc7-e49488d0a120",
+            "sourceColumn": "Value.2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Attribute.3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "63d6d2b5-23f2-42df-9a45-900ac997085e",
+            "sourceColumn": "Attribute.3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value.3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35e11312-2c12-4347-bc90-e1ec520783c3",
+            "sourceColumn": "Value.3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Attribute.4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1f5fe0a-c721-4102-a4c8-986bc6da86cc",
+            "sourceColumn": "Attribute.4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value.4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "14f96e87-60d9-41bf-a067-9b90fbab2244",
+            "sourceColumn": "Value.4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Attribute.5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b2b50c3f-c625-4360-ae1b-42a08b3332d6",
+            "sourceColumn": "Attribute.5",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value.5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c6523f94-e909-4aad-aa37-4b81b249cc6f",
+            "sourceColumn": "Value.5",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "cf0b7b90-88a9-4812-9b84-b5830c834350",
+        "partitions": [
+          {
+            "name": "Passenger cars-be6ef5b7-9710-488d-97d4-7a015885fd25",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.Page(Web.Contents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\", [Timeout=#duration(0,0,0,30)])),",
+                "    #\"Expanded Data\" = Table.ExpandTableColumn(Source, \"Data\", {\"Manufacturer\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\", \"2022[20]\"}, {\"Data.Manufacturer\", \"Data.2007\", \"Data.2008\", \"Data.2009\", \"Data.2010\", \"Data.2011\", \"Data.2012\", \"Data.2022[20]\"}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Expanded Data\",{\"Source\", \"ClassName\", \"Id\"}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Removed Columns1\", each ([Caption] = \"Passenger cars\")),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Filtered Rows\",{\"Caption\"}),",
+                "    #\"Removed Bottom Rows1\" = Table.RemoveLastN(#\"Removed Columns2\",1),",
+                "    #\"Promoted Headers1\" = Table.PromoteHeaders(#\"Removed Bottom Rows1\", [PromoteAllScalars=true]),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Promoted Headers1\",{\"2022\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2007",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2637526b-4144-409a-b0f6-b947bd7bb819",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "44e9775d-5585-4c15-a1d2-db28679a0274",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "959a3eda-e779-45e2-95b4-3c8d24069229",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "36c1abe6-f278-49ff-a5db-116ed4cecc04",
+        "partitions": [
+          {
+            "name": "2007-79097368-381c-4596-b5c5-95ab9c04917b",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Manufacturer\", type text}, {\"2007\", Int64.Type}, {\"2008\", Int64.Type}, {\"2009\", Int64.Type}, {\"2010\", Int64.Type}, {\"2011\", Int64.Type}, {\"2012\", Int64.Type}, {\"2022[20]\", type text}}),",
+                "    #\"Removed Bottom Rows\" = Table.RemoveLastN(#\"Changed Type1\",1),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Removed Bottom Rows\",{{\"2022[20]\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type2\",{\"2022[20]\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Manufacturer\", \"Year\", \"Sales\"})",
+                "in",
+                "    #\"Removed Other Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2008",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5bb1ede2-057b-489f-ae39-06c1c7212a01",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e401a7c-ce24-44a0-8b7a-fe2d11b49475",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8f45b6ea-5f2a-4934-8941-0256ca5f32ef",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "747eced9-48ee-489b-80c7-a15454a98cf3",
+        "partitions": [
+          {
+            "name": "2008-bf44385f-f352-4845-bc7a-decb8d2dfc11",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Manufacturer\", type text}, {\"2007\", Int64.Type}, {\"2008\", Int64.Type}, {\"2009\", Int64.Type}, {\"2010\", Int64.Type}, {\"2011\", Int64.Type}, {\"2012\", Int64.Type}, {\"2022[20]\", type text}}),",
+                "    #\"Removed Bottom Rows\" = Table.RemoveLastN(#\"Changed Type1\",1),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Removed Bottom Rows\",{{\"2022[20]\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type2\",{\"2022[20]\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Manufacturer\", \"Year1\", \"Sales1\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Year1\", \"Year\"}, {\"Sales1\", \"Sales\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2009",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c9ee59c9-3470-45ef-a621-66a06e19e0ff",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6fae4601-ed0c-441d-b7cc-6d53532e69a7",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12432025-d1f1-4902-b307-8008d8c0e284",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "fb71c73f-a4d7-4c68-8174-646476a266b2",
+        "partitions": [
+          {
+            "name": "2009-3b292e3c-85b0-4b9a-8874-0181cb223396",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Manufacturer\", type text}, {\"2007\", Int64.Type}, {\"2008\", Int64.Type}, {\"2009\", Int64.Type}, {\"2010\", Int64.Type}, {\"2011\", Int64.Type}, {\"2012\", Int64.Type}, {\"2022[20]\", type text}}),",
+                "    #\"Removed Bottom Rows\" = Table.RemoveLastN(#\"Changed Type1\",1),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Removed Bottom Rows\",{{\"2022[20]\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type2\",{\"2022[20]\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Manufacturer\", \"Attribute.2\", \"Value.2\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Attribute.2\", \"Year\"}, {\"Value.2\", \"Sales\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2010",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "58ee71af-0a62-4837-b19d-30c26d2a2af7",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "177b458f-20fb-497f-9d67-e7b605fb30b0",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2bc683e7-ef68-499e-904a-85a564cc0018",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "b6c5885b-34fd-42da-bac5-08b96c20361f",
+        "partitions": [
+          {
+            "name": "2010-151050be-8e78-4ae7-b8ef-f5303ee36f5b",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Manufacturer\", type text}, {\"2007\", Int64.Type}, {\"2008\", Int64.Type}, {\"2009\", Int64.Type}, {\"2010\", Int64.Type}, {\"2011\", Int64.Type}, {\"2012\", Int64.Type}, {\"2022[20]\", type text}}),",
+                "    #\"Removed Bottom Rows\" = Table.RemoveLastN(#\"Changed Type1\",1),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Removed Bottom Rows\",{{\"2022[20]\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type2\",{\"2022[20]\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Manufacturer\", \"Attribute.3\", \"Value.3\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Attribute.3\", \"Year\"}, {\"Value.3\", \"Sales\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2011",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0246c199-66c2-4d5b-9511-083c7fc9c746",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f5b62aaf-7f2b-419c-9f42-1c60dc8e3cd0",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a5aeb490-8bba-4c89-9504-ace45944f025",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "9fd531a5-2963-467c-b092-1d3985e7c775",
+        "partitions": [
+          {
+            "name": "2011-ef990f90-54a4-4a49-91d8-929ec7410c8b",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Manufacturer\", type text}, {\"2007\", Int64.Type}, {\"2008\", Int64.Type}, {\"2009\", Int64.Type}, {\"2010\", Int64.Type}, {\"2011\", Int64.Type}, {\"2012\", Int64.Type}, {\"2022[20]\", type text}}),",
+                "    #\"Removed Bottom Rows\" = Table.RemoveLastN(#\"Changed Type1\",1),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Removed Bottom Rows\",{{\"2022[20]\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type2\",{\"2022[20]\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Manufacturer\", \"Attribute.4\", \"Value.4\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Attribute.4\", \"Year\"}, {\"Value.4\", \"Sales\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2012",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb555924-70d2-4c9e-81e1-f6901d6e0730",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "be061cff-eb5e-4e36-8f3c-403e033e42b6",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c5cadbe5-3fa7-4834-a013-d3ae0a1a2c3d",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "a70a1cd5-d128-47ee-9411-5156c394fbff",
+        "partitions": [
+          {
+            "name": "2012-209b8b8d-9152-4bd7-a7c0-7078df117df3",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Manufacturer\", type text}, {\"2007\", Int64.Type}, {\"2008\", Int64.Type}, {\"2009\", Int64.Type}, {\"2010\", Int64.Type}, {\"2011\", Int64.Type}, {\"2012\", Int64.Type}, {\"2022[20]\", type text}}),",
+                "    #\"Removed Bottom Rows\" = Table.RemoveLastN(#\"Changed Type1\",1),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Removed Bottom Rows\",{{\"2022[20]\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type2\",{\"2022[20]\"}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Removed Columns\", {\"Manufacturer\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"}, \"Attribute\", \"Value\"),",
+                "    #\"Unpivoted Columns1\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns\", {\"Manufacturer\", \"2009\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\"}, \"Attribute.1\", \"Value.1\"),",
+                "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns1\", {\"Manufacturer\", \"2010\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\"}, \"Attribute.2\", \"Value.2\"),",
+                "    #\"Unpivoted Columns3\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns2\", {\"Manufacturer\", \"2011\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\"}, \"Attribute.3\", \"Value.3\"),",
+                "    #\"Unpivoted Columns4\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns3\", {\"Manufacturer\", \"2012\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\"}, \"Attribute.4\", \"Value.4\"),",
+                "    #\"Unpivoted Columns5\" = Table.UnpivotOtherColumns(#\"Unpivoted Columns4\", {\"Manufacturer\", \"Attribute\", \"Value\", \"Attribute.1\", \"Value.1\", \"Attribute.2\", \"Value.2\", \"Attribute.3\", \"Value.3\", \"Attribute.4\", \"Value.4\"}, \"Attribute.5\", \"Value.5\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns5\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Sales\"}, {\"Attribute.1\", \"Year1\"}, {\"Value.1\", \"Sales1\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Manufacturer\", \"Attribute.5\", \"Value.5\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Other Columns\",{{\"Attribute.5\", \"Year\"}, {\"Value.5\", \"Sales\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dataset",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4eced5ce-3c5f-4044-8407-c37cdc7303cb",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "defd12b0-3485-4692-a577-c0bf2795a4a2",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Sales",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "06f3afd2-076c-402d-bf98-fb82228bf6d5",
+            "sourceColumn": "Sales",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "f20d6d96-4e5b-4863-a96a-0884d7643b0d",
+        "partitions": [
+          {
+            "name": "Dataset-b578d33b-d5cd-4d28-a2b7-cfe298521f75",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({#\"2007\", #\"2008\", #\"2009\", #\"2010\", #\"2011\", #\"2012\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Year\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
