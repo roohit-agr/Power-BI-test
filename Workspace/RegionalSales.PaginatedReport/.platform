@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "PaginatedReport",
+    "displayName": "RegionalSales"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "61c89db9-caf8-8db5-4f47-8b0141c9ca21"
+  }
+}
