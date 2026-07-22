@@ -796,7 +796,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Web.BrowserContents(\"https://en.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
+                "    Source = Web.BrowserContents(\"https://hi.wikipedia.org/wiki/Automotive_industry_in_Japan\"),",
                 "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(1)\"}, {\"Column2\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(2)\"}, {\"Column3\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(3)\"}, {\"Column4\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(4)\"}, {\"Column5\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(5)\"}, {\"Column6\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(6)\"}, {\"Column7\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(7)\"}, {\"Column8\", \"TABLE.wikitable.sortable:nth-child(44) > * > TR > :nth-child(8)\"}}, [RowSelector=\"TABLE.wikitable.sortable:nth-child(44) > * > TR\"]),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", Int64.Type}, {\"Column3\", Int64.Type}, {\"Column4\", Int64.Type}, {\"Column5\", Int64.Type}, {\"Column6\", Int64.Type}, {\"Column7\", Int64.Type}, {\"Column8\", type text}}),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
