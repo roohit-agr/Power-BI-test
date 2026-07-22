@@ -28,7 +28,7 @@
           </QueryParameter>
         </QueryParameters>
         <rd:DesignerState>
-          <DataGrid xmlns:xsi="http://www.w33.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="">
+          <DataGrid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="">
   <RowNumber>144</RowNumber>
   <ColumnNumber>6</ColumnNumber>
   <ColumnName ColumnIndex="0" ColumnWidth="100" DataType="String">MonthKey</ColumnName>
@@ -3380,7 +3380,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Regional Sales</Value>
+                          <Value>REGIONAL SALES NEW</Value>
                           <Style>
                             <FontFamily>Segoe UI Light</FontFamily>
                             <FontSize>28pt</FontSize>
