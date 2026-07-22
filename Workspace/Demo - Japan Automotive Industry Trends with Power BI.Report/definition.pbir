@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Demo - Japan Automotive Industry Trends with Power BI.Dataset"
+    },
+    "byConnection": null
+  }
+}
